@@ -1,7 +1,10 @@
 #include <iostream>
+#include <fstream>
 #include <string>
 #include <Windows.h>
-#include "RegistryInterface.h"
+#include "json/json.h"
+#include "fileInterface.h"
+#include "registryInterface.h"
 
 using namespace std;
 
@@ -15,8 +18,10 @@ int main() {
 
 int main() {
 	registryInterface reg;
-	reg.loadRegistryValues();
-	reg.outputCurrentKeys();
+	fileInterface file("C:\\Temp\\test.rpp");
+	//reg.loadRegistryValues();
+	//reg.outputCurrentKeys();
+	file.LoadValues();
 	system("PAUSE");
 	return 0;
 }

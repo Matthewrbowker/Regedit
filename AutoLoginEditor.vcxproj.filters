@@ -20,7 +20,10 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="RegistryInterface.h">
+    <ClInclude Include="fileInterface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="registryInterface.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

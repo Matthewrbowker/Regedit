@@ -74,7 +74,8 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="RegistryInterface.h" />
+    <ClInclude Include="fileInterface.h" />
+    <ClInclude Include="registryInterface.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
