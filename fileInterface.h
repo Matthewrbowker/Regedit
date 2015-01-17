@@ -19,7 +19,11 @@ void fileInterface::loadFile() {
 	// Open the file
 	// Save the variables
 	// Close the file
-	cout << filename << endl;
+	CHAR cwBuffer[8192] = { 0 };
+	LPSTR pszBuffer = cwBuffer;
+	GetModuleFileName(NULL, pszBuffer, 8192);
+	cout << pszBuffer << endl;
+	/*
 	ifstream f(filename);
 	string line;
 	string json = "";
@@ -35,9 +39,10 @@ void fileInterface::loadFile() {
 	else cout << "Unable to open file";
 
 	// Erase new lines from the json variable
-	json.erase(std::remove(json.begin(), json.end(), '\n'), json.end());
+	// json.erase(std::remove(json.begin(), json.end(), '\n'), json.end());
 
 	cout << json << endl;
+	*/
 }
 
 fileInterface::fileInterface() {

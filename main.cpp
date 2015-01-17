@@ -16,12 +16,26 @@ int main() {
 } */
 
 
-int main() {
-	registryInterface reg;
-	fileInterface file("C:\\Temp\\test.rpp");
+int main(int argc, char * argv[]) {
+	int i = 0;
+	string fileName;
+	while (i < argc) {
+		cout << argv[i] << endl;
+		i++;
+	}
+	/*
+	if (argc == 2) {
+		fileName = argv[1];
+	}
+	else {
+		fileName = "Normal.rppt";
+	}
+	*/
+	//registryInterface reg;
+	//fileInterface file(fileName);
 	//reg.loadRegistryValues();
 	//reg.outputCurrentKeys();
-	file.LoadValues();
+	//file.LoadValues();
 	system("PAUSE");
 	return 0;
 }
